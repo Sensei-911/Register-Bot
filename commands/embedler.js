@@ -1,4 +1,10 @@
 /*
+Bu proje exsus ve nymphdora sunucuları için özel olarak Sensei tarafından hazırlanmıştır!
+Bu proje MIT lisansı ile korunuyor ve izinsiz paylaşılması yasaktır!
+Bu proje kodun daha açıklayıcı olması için bir çok yorum eklenerek yazılmıştır!
+*/
+
+/*
 -Eğer neden burada ki embedlerin bu kadar kısa olduğunu düşünüyorsanız 
 -Bu embedler komutun içinde değiştiriliyor (yani embede açıklama ekleniyor footer ekleniyor filan)
 -Daha az satır kod yazılarak daha anlaşılır olmasını sağlamak için yapılmıştır...

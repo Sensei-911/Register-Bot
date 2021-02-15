@@ -1,6 +1,6 @@
 /*
 Bu proje exsus ve nymphdora sunucuları için özel olarak Sensei tarafından hazırlanmıştır!
-Bu proje M.I.T. lisansı ile korunuyor ve izinsiz paylaşılması yasaktır!
+Bu proje MIT lisansı ile korunuyor ve izinsiz paylaşılması yasaktır!
 Bu proje kodun daha açıklayıcı olması için bir çok yorum eklenerek yazılmıştır!
 */
 
@@ -64,24 +64,20 @@ Sunucuya biri geldiğinde çalışan kısım (hoş geldin mesajı, kullanıcın�
 *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*/
 
 client.on("guildMemberAdd", async (member) => {
+
+const sunucu = client.guilds.cache.get(options.sunucu_id)
 const hoşgeldin_kanalı = client.channels.cache.get(options.hoşgeldin_kanal_id)
 if(member.user.bot) return;
 await member.setNickname(`${options.sunucu_tag} Kayıtsız`)
-hoşgeldin_kanalı.send(`
-**WELCOME TO ${sunucu.name}**
-
-**${member.user.username} Seninle ${sunucu.memberCount} Kişiyiz!**
-
-**Kayıt Olmak İçin Teyit Odalarına Geçiş Yapabilirsin**
-
-**Bu Roldeki Arkadaşlarım Seninle İlgilenecektir <@&${options.kayıt_yetkilisi_rol_id}>**`);
-});
+hoşgeldin_kanalı.send(`**WELCOME TO ${sunucu.name}**\n\n**${member.user.username} Seninle Birlikte ${sunucu.memberCount} Kişiyiz!**\n\n**Kayıt Olmak İçin Teyit Odalarına Geçiş Yapabilirsin**\n\n**Bu Roldeki Arkadaşlarım Seninle İlgilenecektir <@&${options.kayıt_yetkilisi_rol_id}>**`)});
 
 /*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Biri kendini güncellediğinde bunları yapacak (tag için kullanılan kod)...
 *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*/
 
 client.on("userUpdate", async (oldUser, newUser) => {
+
+const sunucu = client.guilds.cache.get(options.sunucu_id)
 
 //Tag alındığında rol verilir...
 

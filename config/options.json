@@ -1,0 +1,17 @@
+{
+"sunucu_id":"",
+"durulacak_sesli_kanal_id":"",
+"sunucu_tag":"",
+"tag_rolü_id":"",
+"hoşgeldin_kanal_id":"",
+"kayıt_kanalı_id":"",
+"kayıt_yetkilisi_rol_id":"",
+"erkek_rolü_id":"",
+"kız_rolü_id":"",
+"kayıtsız_rolü_id":"",
+"kayıt_edilince_gönderilen_mesaj_kanal_id":"",
+
+"bu_kısım_hakkında":"Bu iki yeri doldurmanız zorunlu değil ama doldurursanız kayıtdan sonra mesajını etkiler...",
+"kurallar_kanalı_id":"",
+"rol_alım_kanalı_id":""
+}

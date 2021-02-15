@@ -1,0 +1,12 @@
+{
+  "name": "nymphdora",
+  "version": "1.0.0",
+  "description": "Sensei tarafından yapılan kayıt botudur.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
